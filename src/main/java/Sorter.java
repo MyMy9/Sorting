@@ -15,6 +15,7 @@ public class Sorter {
 			List<Task> tasks = taskReader.getTasks();
 			FirstComeFirstServe.fcfsSort(tasks);
 			ShortestJobFirst.sort(tasks);
+			PriorityScheduling.priorityScheduling(new Task [tasks.size()], tasks.size());
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
