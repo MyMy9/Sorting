@@ -2,7 +2,7 @@ package main.java;
 
 import java.io.Serializable;
 
-public class Task implements Serializable{
+public class Task implements Serializable {
 
 	/**
 	 * 
@@ -12,6 +12,7 @@ public class Task implements Serializable{
 	int priority;
 	int burst;
 	int tId;
+	int waitTime;
 
 	public Task(String inName, int inPriority, int inBurst, int inTid) {
 
@@ -19,6 +20,7 @@ public class Task implements Serializable{
 		priority = inPriority;
 		burst = inBurst;
 		tId = inTid;
+		waitTime = 0;
 	}
 
 	public String getName() {
@@ -51,6 +53,14 @@ public class Task implements Serializable{
 
 	public void settId(int tId) {
 		this.tId = tId;
+	}
+
+	public int getWaitTime() {
+		return waitTime;
+	}
+
+	public void setWaitTime(int waitTime) {
+		this.waitTime = waitTime;
 	}
 
 }

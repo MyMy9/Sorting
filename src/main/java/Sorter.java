@@ -1,6 +1,7 @@
 package main.java;
 
 import java.io.FileNotFoundException;
+import java.util.List;
 
 public class Sorter {
 
@@ -11,9 +12,10 @@ public class Sorter {
 		ReadTasks taskReader = new ReadTasks(
 				"C:\\Users\\Myles\\eclipse-workspace\\Sorting\\src\\main\\resources\\Tasks.txt");
 		try {
-			taskReader.getTasks();
+			List<Task> tasks = taskReader.getTasks();
+			FirstComeFirstServe.fcfsSort(tasks);
+			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
