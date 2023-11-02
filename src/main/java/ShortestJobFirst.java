@@ -18,7 +18,6 @@ public class ShortestJobFirst {
 
 		int total = 0;
 		float avg_wt, avg_tat;
-		List<Task> newTasks = new ArrayList<Task>();
 		for (int i = 0; i < n - 1; i++) {
 			// Find the minimum element in unsorted array
 			int min_idx = i;

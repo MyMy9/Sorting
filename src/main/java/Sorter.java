@@ -14,7 +14,8 @@ public class Sorter {
 		try {
 			List<Task> tasks = taskReader.getTasks();
 			FirstComeFirstServe.fcfsSort(tasks);
-			
+			ShortestJobFirst.sort(tasks);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
