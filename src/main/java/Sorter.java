@@ -10,7 +10,7 @@ public class Sorter {
 
 	public static void main(String[] args) {
 		ReadTasks taskReader = new ReadTasks(
-				"C:\\Users\\Myles\\eclipse-workspace\\Sorting\\src\\main\\resources\\Tasks.txt");
+				"C:\\Users\\Mya\\eclipse-workspace\\Sorting\\src\\main\\resources\\Tasks.txt");
 		try {
 			List<Task> tasks = taskReader.getTasks();
 			FirstComeFirstServe.fcfsSort(tasks);
